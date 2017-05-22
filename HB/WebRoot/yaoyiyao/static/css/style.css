@@ -1,0 +1,652 @@
+.layout {
+	margin: 0 auto;
+	width: 7.2rem;
+	height: 12.5rem;
+	display: none;
+}
+
+.header {
+	height: 1.1rem;
+	background: #ea4144;
+	line-height: 1.1rem;
+	text-align: center;
+}
+
+.header .title a {
+	font-size: 0.38rem;
+	color: #FFFFFF;
+}
+
+input {
+	cursor: pointer;
+}
+/*颜色*/
+.c_green {
+	color: #28c76a;
+}
+
+.c_red {
+	color: #ea4144;
+}
+
+img {
+	max-width: 100%;
+	vertical-align: middle;
+	border: 0;
+	-ms-interpolation-mode: bicubic;
+	-webkit-touch-callout: none
+}
+
+/*复选框,单选框样式美化*/
+/*input[type=radio] {
+    display: none;
+}
+input[type=radio] + label {
+	background:url(../imgs/wz36.png) no-repeat; background-size: cover;
+	width:18px; height:18px;
+    cursor: pointer;
+    display: inline-block;
+}
+input[type=radio]:checked + label {
+	background-image: url(../imgs/wz35.png);
+}*/
+input[type=checkbox] {
+	display: none;
+}
+
+input[type=checkbox]+label {
+	background: url(../imgs/st2.png) no-repeat;
+	background-size: 0.36rem 0.36rem;
+	width: 0.37rem;
+	height: 0.37rem;
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	top: 0.1rem;
+}
+
+input[type=checkbox]:checked+label {
+	background-image: url(../imgs/st3.png);
+	background-size: 0.36rem 0.36rem;
+}
+
+/*5提现记录*/
+.my_income {
+	
+}
+
+.my_income .view {
+	text-align: center;
+	padding-top: 0.37rem;
+}
+
+.my_income .view .imgs img {
+	width: 1.6rem;
+	height: 1.6rem;
+}
+
+.my_income .view .imgs h4 {
+	font-size: 0.24rem;
+	color: #4d4d4d;
+	padding-top: 0.3rem;
+}
+
+.my_income .view .imgs h2 {
+	font-size: 0.64rem;
+	color: #ef5158;
+	padding-top: 0.5rem;
+}
+
+.my_income .view .imgs span {
+	font-size: 0.28rem;
+}
+
+.my_income .view .btn {
+	margin-top: 1rem;
+}
+
+.my_income .view .btn input {
+	border: none;
+	width: 2.68rem;
+	height: 0.92rem;
+	font-size: 0.31rem;
+	color: #FFFFFF;
+	background: #ea4144;
+	border-radius: 0.04rem;
+}
+
+.my_income .view .btn h4 {
+	font-size: 0.22rem;
+	color: #4d4d4d;
+	padding-top: 0.25rem;
+}
+
+.my_income .view .btn span {
+	color: #ea4144;
+}
+
+.my_income .list {
+	margin: 0.5rem 0.32rem 0 0.32rem;
+}
+
+.my_income .list .head {
+	border-bottom: 1px solid #4d4d4d;
+	padding-bottom: 0.15rem;
+}
+
+.my_income .list .head h4 {
+	font-size: 0.22rem;
+	color: #4d4d4d;
+}
+
+.my_income .list .head span {
+	color: #b2b2b2;
+	padding-left: 0.05rem;
+}
+
+.my_income .list .body {
+	width: 6.56rem;
+	height: 3.9rem;
+	overflow: hidden;
+	position: relative;
+	/* Prevent native touch events on Windows */
+	-ms-touch-action: none;
+	/* Prevent the callout on tap-hold and text selection */
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	/* Prevent text resize on orientation change, useful for web-apps */
+	-webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+	-o-text-size-adjust: none;
+	text-size-adjust: none;
+}
+
+.my_income .list .body #scroller {
+	position: absolute;
+	width: 100%;
+	/* Prevent elements to be highlighted on tap */
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	/* Put the scroller into the HW Compositing layer right from the start */
+	-webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	-o-transform: translateZ(0);
+	transform: translateZ(0);
+}
+
+.my_income .list .body li {
+	height: 1.25rem;
+	border-bottom: 1px solid #d9d9d9;
+}
+
+.my_income .list .body li .l {
+	float: left;
+	display: inline;
+	margin-top: 0.2rem;
+}
+
+.my_income .list .body li .l h2 {
+	font-size: 0.28rem;
+	color: #1e1e1e;
+}
+
+.my_income .list .body li .l h4 {
+	font-size: 0.24rem;
+	color: #b2b2b2;
+	padding-top: 0.1rem;
+}
+
+.my_income .list .body li .l span {
+	padding-left: 0.15rem;
+}
+
+.my_income .list .body li .r {
+	float: right;
+	display: inline;
+	text-align: right;
+	margin-top: 0.2rem;
+}
+
+.my_income .list .body li .r h2 {
+	font-size: 0.28rem;
+}
+
+.my_income .list .body li .r h4 {
+	font-size: 0.24rem;
+	padding-top: 0.1rem;
+	color: #b2b2b2;
+}
+
+/*4提现*/
+.withdraw {
+	margin: 0 0.32rem;
+	margin-top: 0.3rem;
+}
+
+.withdraw .info {
+	
+}
+
+.withdraw .info li {
+	height: 0.8rem;
+	border-bottom: 1px solid #4d4d4d;
+	line-height: 0.8rem;
+	position: relative;
+}
+
+.withdraw .info li label {
+	font-size: 0.36rem;
+	color: #4d4d4d;
+}
+
+.withdraw .info li:nth-child(2) label {
+	font-size: 0.28rem;
+}
+
+.withdraw .info li input {
+	font-size: 0.48rem;
+	border: none;
+	height: 100%;
+	background: inherit;
+	width: 4.6rem;
+	color: #ef5158;
+}
+
+.withdraw .info li span {
+	font-size: 0.28rem;
+}
+
+.withdraw .info li .cash {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.withdraw .info li .cash a {
+	font-size: 0.28rem;
+	color: #b2b2b2;
+}
+
+.withdraw .protocol {
+	margin-top: 0.8rem;
+}
+
+.withdraw .protocol h4 {
+	font-size: 0.22rem;
+	color: #4d4d4d;
+}
+
+.withdraw .protocol h4 a {
+	color: #4d4d4d;
+}
+
+.withdraw .btn {
+	text-align: center;
+	margin-top: 1.2rem;
+}
+
+.withdraw .btn input {
+	border: none;
+	width: 2.68rem;
+	height: 0.92rem;
+	font-size: 0.31rem;
+	color: #FFFFFF;
+	background: #ea4144;
+	border-radius: 0.04rem;
+}
+
+.withdraw .btn h4 {
+	font-size: 0.22rem;
+	color: #4d4d4d;
+	padding-top: 0.25rem;
+}
+
+.withdraw .btn span {
+	color: #ea4144;
+}
+
+/*1首页*/
+.home_page {
+	background: url(../imgs/st1.jpg) no-repeat;
+	background-size: cover;
+	text-align: center;
+	height: 100%; /*background-size: 7.2rem 12.5rem;*/
+}
+
+.home_page h2 {
+	font-size: 0.72rem;
+	color: #fffcfd;
+	padding-top: 0.8rem;
+}
+
+.home_page span {
+	font-size: 0.96rem;
+	color: #fffcfd;
+	padding-right: 0.4rem;
+}
+
+.home_page .ico {
+	margin-top: 0.7rem;
+}
+
+.home_page .ico img {
+	width: 100%;
+}
+
+.home_page h4 {
+	margin-top: 0.6rem;
+}
+
+.home_page h4 a {
+	font-size: 0.24rem;
+	color: #ea4144;
+}
+
+.mask {
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	z-index: 99999;
+}
+
+.mask .wrap {
+	margin: 0 0.33rem;
+	background: #FFFFFF;
+	text-align: center;
+	position: absolute;
+	bottom: 2.75rem;
+}
+
+.mask .wrap .banner {
+	position: relative;
+}
+
+.mask .wrap .banner .imgs img {
+	width: 6.54rem;
+	height: 4.4rem;
+}
+
+.mask .wrap .banner .txt {
+	position: absolute;
+	left: 0.4rem;
+	top: 0.3rem;
+	color: #fffcfd;
+}
+
+.mask .wrap .banner .logo {
+	position: absolute;
+	right: 0.3rem;
+	bottom: 0.3rem;
+}
+
+.mask .wrap .banner .logo img {
+	width: 0.96rem;
+	height: 0.35rem;
+}
+
+.mask .wrap .banner .txt h2 {
+	font-size: 0.4rem;
+}
+
+.mask .wrap .banner .txt h4 {
+	font-size: 0.32rem;
+}
+
+.mask .wrap .view {
+	margin-top: 0.3rem;
+	margin-bottom: 0.5rem;
+}
+
+.mask .wrap .view img {
+	width: 1.6rem;
+	height: 1.6rem;
+}
+
+.mask .wrap .view h4 {
+	font-size: 0.28rem;
+	color: #4d4d4d;
+	padding-top: 0.1rem;
+}
+
+.mask .wrap .view h2 {
+	font-size: 0.64rem;
+	padding-top: 0.3rem;
+}
+
+.mask .wrap .view h2 span {
+	font-size: 0.28rem;
+}
+
+.mask .wrap .view .btn {
+	margin-top: 0.3rem;
+}
+
+.mask .wrap .view .btn a {
+	border: none;
+	width: 2.68rem;
+	height: 0.92rem;
+	font-size: 0.31rem;
+	color: #4d4d4d;
+	background: #eeeeee;
+	border-radius: 0.04rem;
+	display: inline-block;
+	line-height: 0.92rem;
+}
+/*.mask .wrap .view .btn input{
+	border: none;width: 2.68rem;height: 0.92rem;font-size: 0.31rem;color: #4d4d4d;background: #eeeeee;border-radius: 0.04rem;
+}*/
+.mask .wrap .close {
+	position: absolute;
+	right: 0.18rem;
+	top: 0.18rem;
+	cursor: pointer;
+}
+
+.mask .wrap .close img {
+	width: 0.2rem;
+	height: 0.2rem;
+}
+
+.mask .footer {
+	width: 100%;
+	height: 2.25rem;
+	background: #ef5158;
+	text-align: center;
+	position: absolute;
+	bottom: 0.5rem;
+}
+
+.mask .footer a {
+	font-size: 0.4rem;
+	color: #ffffff;
+	line-height: 2.25rem;
+}
+
+/*3摇完*/
+.shake_over {
+	text-align: center;
+}
+
+.shake_over .banner {
+	position: relative;
+}
+
+.shake_over .banner .imgs img {
+	width: 7.2rem;
+	height: 4.4rem;
+}
+
+.shake_over .banner .txt {
+	position: absolute;
+	left: 0.33rem;
+	top: 0.3rem;
+	color: #fffcfd;
+}
+
+.shake_over .banner .logo {
+	position: absolute;
+	right: 0.3rem;
+	bottom: 0.3rem;
+}
+
+.shake_over .banner .logo img {
+	width: 0.96rem;
+	height: 0.35rem;
+}
+
+.shake_over .banner .txt h2 {
+	font-size: 0.4rem;
+}
+
+.shake_over .banner .txt h4 {
+	font-size: 0.32rem;
+}
+
+.shake_over .view  .txt, .shake_over .view .btn {
+	margin-top: 1.5rem;
+}
+
+.shake_over .view h2 {
+	font-size: 0.32rem;
+	color: #4d4d4d;
+}
+
+.shake_over .view .btn input {
+	border: none;
+	width: 3.2rem;
+	height: 0.92rem;
+	font-size: 0.31rem;
+	color: #4d4d4d;
+	background: #eeeeee;
+	border-radius: 0.04rem;
+}
+
+/*6设备列表*/
+.device_list {
+	margin: 0 0.33rem;
+}
+
+.device_list .head {
+	height: auto;
+	overflow: hidden;
+	border-bottom: 1px solid #4d4d4d;
+	height: 1.85rem;
+}
+
+.device_list .head .ico {
+	float: left;
+	display: inline;
+	position: relative;
+	top: 50%;
+	margin-top: -0.6rem;
+}
+
+.device_list .head .ico img {
+	width: 1.2rem;
+	height: 1.2rem;
+}
+
+.device_list .head .txt {
+	padding-left: 1.5rem;
+	position: relative;
+	top: 50%;
+	margin-top: -0.4rem;
+}
+
+.device_list .head h2 {
+	font-size: 0.32rem;
+	color: #1e1e1e;
+}
+
+.device_list .head h4 {
+	font-size: 0.28rem;
+	color: #999999;
+}
+
+.device_list .body {
+	text-align: center;
+	padding-top: 2.3rem;
+}
+
+.device_list .body .ico img {
+	width: 1.2rem;
+	height: 1.2rem;
+}
+
+.device_list .body h4 {
+	font-size: 0.24rem;
+	color: #4d4d4d;
+	padding-top: 0.25rem;
+}
+
+.device_list .footer {
+	margin-top: 3.2rem;
+}
+
+.device_list .footer ul {
+	height: auto;
+	overflow: hidden;
+}
+
+.device_list .footer li {
+	width: 48.5%;
+	float: left;
+	display: inline;
+	margin-right: 3%;
+	height: 0.92rem;
+	background: #ef5158;
+	line-height: 0.92rem;
+	text-align: center;
+	border-radius: 0.04rem;
+}
+
+.device_list .footer li:nth-child(2) {
+	margin-right: 0;
+}
+
+.device_list .footer li a {
+	font-size: 0.31rem;
+	color: #ffffff;
+}
+
+/*7激活弹窗*/
+.mask .wrap1 {
+	height: 4.05rem;
+	width: 6.54rem;
+	position: fixed;
+	top: 50%;
+	margin-top: -2rem;
+	border-radius: 0.06rem;
+}
+
+.mask .wrap1 .txt {
+	margin-top: 1.2rem;
+}
+
+.mask .wrap1 .txt h2 {
+	font-size: 0.32rem;
+	color: #4d4d4d;
+}
+
+.mask .wrap1 .btn {
+	width: 4rem;
+	height: 0.95rem;
+	background: #ef5158;
+	line-height: 0.95rem;
+	margin: 0 auto;
+	border-radius: 0.04rem;
+	margin-top: 1.1rem;
+}
+
+.mask .wrap1 .btn a {
+	font-size: 0.31rem;
+	color: #ffffff;
+	display: block;
+}

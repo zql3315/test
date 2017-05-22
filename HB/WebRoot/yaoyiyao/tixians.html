@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,
+chrome=1" />
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="">
+<meta name="format-detection" content="telephone=no">
+<title>5提现记录</title>
+<link rel="stylesheet" href="static/css/slicy.css">
+<link rel="stylesheet" href="static/css/style.css">
+<!--[if lt IE 9]>
+<script src="static/js/html5.js"></script>
+<![endif]-->
+</head>
+
+<body onload="loaded()">
+	<div class="layout">
+		<div class="header">
+			<!--<div class="personal">
+			<a href="#"><img src="static/imgs/wz5.png"/></a>
+		</div>-->
+			<div class="title">
+				<a href="#"> 我的收入 </a>
+			</div>
+		</div>
+
+		<div class="my_income">
+			<div class="view">
+				<div class="imgs">
+					<img src="static/imgs/st1.png" />
+					<h4>iamO2O机器人餐厅系统的余额</h4>
+					<h2>
+						0.88<span>元</span>
+					</h2>
+				</div>
+				<div class="btn">
+					<input type="submit" name="" id="" value="提现" />
+					<h4>
+						累计已提现<span>2</span>元
+					</h4>
+				</div>
+			</div>
+			<div class="list">
+				<div class="head">
+					<h4>
+						收支详情<span>（上拉查看更多）</span>
+					</h4>
+				</div>
+				<div class="body" id="wrapper">
+					<div id="scroller">
+						<ul>
+							<li>
+								<div class="l">
+									<h2>红包广告返利</h2>
+									<h4>
+										2016-5-31<span>08:00</span>
+									</h4>
+								</div>
+								<div class="r">
+									<h2 class="c_green">+0.15元</h2>
+									<h4>我</h4>
+								</div>
+							</li>
+							<li>
+								<div class="l">
+									<h2>收入提现</h2>
+									<h4>
+										2016-5-31<span>08:00</span>
+									</h4>
+								</div>
+								<div class="r">
+									<h2 class="c_red">-0.2元</h2>
+									<h4>我</h4>
+								</div>
+							</li>
+							<li>
+								<div class="l">
+									<h2>红包广告返利</h2>
+									<h4>
+										2016-5-31<span>08:00</span>
+									</h4>
+								</div>
+								<div class="r">
+									<h2 class="c_green">+0.08元</h2>
+									<h4>我</h4>
+								</div>
+							</li>
+							<li>
+								<div class="l">
+									<h2>红包广告返利</h2>
+									<h4>
+										2016-5-31<span>08:00</span>
+									</h4>
+								</div>
+								<div class="r">
+									<h2 class="c_green">+0.15元</h2>
+									<h4>我</h4>
+								</div>
+							</li>
+							<li>
+								<div class="l">
+									<h2>收入提现</h2>
+									<h4>
+										2016-5-31<span>08:00</span>
+									</h4>
+								</div>
+								<div class="r">
+									<h2 class="c_red">-0.2元</h2>
+									<h4>我</h4>
+								</div>
+							</li>
+							<li>
+								<div class="l">
+									<h2>红包广告返利</h2>
+									<h4>
+										2016-5-31<span>08:00</span>
+									</h4>
+								</div>
+								<div class="r">
+									<h2 class="c_green">+0.08元</h2>
+									<h4>我</h4>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="static/js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="static/js/script.js"></script>
+	<script type="text/javascript" src="static/js/iscroll.js"></script>
+	<script type="text/javascript">
+		var myScroll;
+		function loaded() {
+			myScroll = new IScroll('#wrapper');
+		}
+		document.addEventListener('touchmove', function(e) {
+			e.preventDefault();
+		});
+	</script>
+</body>
+
+</html>
