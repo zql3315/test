@@ -10,7 +10,7 @@
 
     <properties>
     </properties>
-    
+    <!--
     <repositories>
         <repository>
             <id>nexus</id>
@@ -27,7 +27,7 @@
             <snapshots><enabled>true</enabled></snapshots>
         </pluginRepository>
     </pluginRepositories>
-
+	-->
     <dependencies>
         
 
